@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+.quiz-container{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+/*--------------------------------------------------------------
+General Layout
+--------------------------------------------------------------*/
+body{
+    margin: 0;
+    background-color: #FFF;
+}
+
+.quiz-container{
+    width: 1920px;
+    height: 947px;
+    position: relative;
+    overflow: hidden;
+    color: #FFF;
+    background: url("resources/Marquee Background.jpg") no-repeat 0px 0px;
+}
