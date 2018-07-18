@@ -7,6 +7,9 @@ Typography
     font-weight: 400;
 }
 
+.quiz-container p{
+    margin: 0 0 14px 0;
+}
 
 
 /*--------------------------------------------------------------
@@ -24,4 +27,8 @@ body{
     overflow: hidden;
     color: #FFF;
     background: url("resources/Marquee Background.jpg") no-repeat 0px 0px;
+}
+
+.intro{
+
 }
