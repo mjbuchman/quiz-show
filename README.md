@@ -10,4 +10,4 @@ Clone the [repository](https://github.com/mjbuchman/quiz-show) and run the index
 
 ## Resources Used
 ### Font:
--
+- https://fonts.googleapis.com/css?family=Roboto
