@@ -3,7 +3,7 @@
 ## Description
 
 ## How to Use
-Clone the [repository](https://github.com/mjbuchman/quiz-show).....
+Clone the [repository](https://github.com/mjbuchman/quiz-show) and run the index.html file
 
 ## Features
 - 
