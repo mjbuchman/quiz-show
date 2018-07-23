@@ -18,11 +18,11 @@
 				<p class="btn" ng-click="activeQuestion = 0">Play</p>
 			</div>
 
-			<div class="game-screen">
+			<div class="game-screen {{(activeQuestion > -1) ? 'active' : 'inactive'}}">
 				<h1>Are You Smarter Than<span>Mr. Quiz?</span></h1>
-				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="800px" width="800px">
+				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="40%" width="20%">
 				<hr></hr>
-				<div class="scoreboard">
+				<div class="scoreboard {{(activeQuestion > -1) ? 'active' : 'inactive'}}">
 					<p class="level">Level 10</p>
 					<p class="level">Level 9</p>
 					<p class="level">Level 8</p>
@@ -34,22 +34,19 @@
 					<p class="level">Level 2</p>
 					<p class="level">Level 1</p>
 				</div>
-			</div>
 
-			<div class="progress"></div>
-
-			<div class="question answered" ng-repeat="myQuestion in myQuestions">
-				<p class="txt">{{myQuestion.question}}</p>
-				<p class="ans" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
-				<div class="feedback">
-					<img src="resources\speech.png" alt="Mr. Quiz" height="60%" width="40%">
-					<p>Good Job! That's <strong>correct</strong></p>
-					<p>Sorry, that's wrong.<strong>You Lose!</strong></p>
-					<div class="btn">Continue</div>
+				<div class="question unanswered {{$index === activeQuestion ? 'active' : 'inactive'}}" ng-repeat="myQuestion in myQuestions">
+					<p class="txt">{{myQuestion.question}}</p>
+					<p class="ans" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+					<div class="feedback">
+						<img src="resources\speech.png" alt="Mr. Quiz" height="60%" width="40%">
+						<p>Good Job! That's <strong>correct</strong></p>
+						<p>Sorry, that's wrong.<strong>You Lose!</strong></p>
+						<div class="btn">Continue</div>
+					</div>
 				</div>
 			</div>
 
-			<div class="results"></div>
 		</div>
 
 	</body>
