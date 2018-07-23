@@ -51,18 +51,22 @@ body{
     /*box-shadow: 10px -8px 300px 50px rgba(255,255,255,0.38);*/
 }
 
-.intro img{
-    position: absolute;
-    top: 15%;
-    left: 22.5%;
-    visibility: hidden;
+.intro{
+    display: inline-block;
+    width:inherit;
+    height: inherit;
 }
 
 .intro p{
-    position: absolute;
-    top: 70%;
-    left: 47%;
-    visibility: hidden;
+    position: relative;
+    top: 20%;
+    left: -3%;
+}
+
+.intro img{
+    position: relative;
+    top: 15%;
+    left: 22.5%;
 }
 
 .intro .btn{
@@ -86,7 +90,7 @@ body{
     margin: 0;
     position: absolute;
     top: 14%;
-    left: 10%;
+    left: -90%;
 }
 
 .game-screen h1 span{
@@ -97,14 +101,14 @@ body{
 .game-screen img{
     position: absolute;
     top: 75%;
-    left: -5%;
+    left: -105%;
 }
 
 .game-screen hr{
     display: inline-block;
     position: absolute;
     top: 14%;
-    left: 64.5%;
+    left: -35.5%;
     width: 2px;
     height: 435px;
     background-color: #FFF;
@@ -114,7 +118,7 @@ body{
 .scoreboard{
     position: relative;
     top: 15%;
-    left: 63%;
+    left: -37%;
     width: 10%;
 }
 
@@ -128,11 +132,15 @@ body{
     text-align: center;
 }
 
+.level.complete{
+    background: linear-gradient(to top, rgba(62,119,233,1) 0%, rgba(62,119,233,1) 72%, rgba(255,255,255,1) 100%);
+}
+
 .question{
     width: 550px;
     position: absolute;
-    top: 44%;
-    left: 10%;
+    top: 40%;
+    left: -90%;
 }
 
 .question .txt{
@@ -187,4 +195,58 @@ body{
 
 .question.answered .ans{
     cursor: default;
+}
+
+.question .feedback{
+    color: #000;
+    transition: opacity 1.5s;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.question .feedback img{
+    display: block;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+}
+
+.question .feedback .btn{
+    position: absolute;
+    top: 100%;
+    left: 78%;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #FF5952;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+    padding: 7px 15px;
+    border-radius: 6px;
+}
+
+.question .feedback p{
+    display: block;
+    width:20%;
+    position: absolute;
+    top: 125%;
+    left: 11%;
+}
+
+.question.answered .feedback{
+    visibility: visible;
+    opacity: 1;
+}
+
+.quiz-container .active, .quiz-container .inactive{
+    transition: 1.5s ease-in-out;
+}
+
+.intro.active{
+    transform: scale(1);
+}
+
+.intro.inactive{
+    transform: scale(0);
 }
