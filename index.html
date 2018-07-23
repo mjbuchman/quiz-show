@@ -1,53 +1,56 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en-US" ng-app="Quiz Show">
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mr. Quiz's BIG Quiz Show</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-	<link rel="stylesheet" href="quiz.css">
-</head>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mr. Quiz's BIG Quiz Show</title>
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+		<script type="text/javascript" src="quiz.js" defer></script>
+		<link rel="stylesheet" href="quiz.css">
+	</head>
 
-<body>
-	<div class="quiz-container">
-		<div class="intro">
-			<img src="resources\title.png" alt="Title" height="50%" width="50%">
-			<p class="btn">Play</p>
-		</div>
-
-		<div class="game-screen">
-			<h1>Are You Smarter Than<span>Mr. Quiz?</span></h1>
-			<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="40%" width="20%">
-			<hr></hr>
-			<div class="scoreboard">
-				<p class="level">Level 10</p>
-				<p class="level">Level 9</p>
-				<p class="level">Level 8</p>
-				<p class="level">Level 7</p>
-				<p class="level">Level 6</p>
-				<p class="level">Level 5</p>
-				<p class="level">Level 4</p>
-				<p class="level">Level 3</p>
-				<p class="level">Level 2</p>
-				<p class="level">Level 1</p>
+	<body>
+		<div class="quiz-container" ng-controller='QuizController'>
+			<div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
+				<img src="resources\title.png" alt="Title" height="50%" width="50%">
+				<p class="btn" ng-click="activeQuestion = 0">Play</p>
 			</div>
+
+			<div class="game-screen">
+				<h1>Are You Smarter Than<span>Mr. Quiz?</span></h1>
+				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="800px" width="800px">
+				<hr></hr>
+				<div class="scoreboard">
+					<p class="level">Level 10</p>
+					<p class="level">Level 9</p>
+					<p class="level">Level 8</p>
+					<p class="level">Level 7</p>
+					<p class="level">Level 6</p>
+					<p class="level">Level 5</p>
+					<p class="level">Level 4</p>
+					<p class="level">Level 3</p>
+					<p class="level">Level 2</p>
+					<p class="level">Level 1</p>
+				</div>
+			</div>
+
+			<div class="progress"></div>
+
+			<div class="question answered" ng-repeat="myQuestion in myQuestions">
+				<p class="txt">{{myQuestion.question}}</p>
+				<p class="ans" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+				<div class="feedback">
+					<img src="resources\speech.png" alt="Mr. Quiz" height="60%" width="40%">
+					<p>Good Job! That's <strong>correct</strong></p>
+					<p>Sorry, that's wrong.<strong>You Lose!</strong></p>
+					<div class="btn">Continue</div>
+				</div>
+			</div>
+
+			<div class="results"></div>
 		</div>
 
-		<div class="progress"></div>
-
-		<div class="question unanswered">
-			<p class="txt">This is a question?</p>
-			<p class="ans correct">Answer 1</p>
-			<p class="ans selected">Answer 2</p>
-			<p class="ans">Answer 3</p>
-			<p class="ans">Answer 4</p>
-			<div class="feeback"></div>
-		</div>
-
-		<div class="results"></div>
-	</div>
-
-
-</body>
+	</body>
 </html>
