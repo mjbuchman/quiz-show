@@ -35,14 +35,25 @@
 					<p class="level">Level 1</p>
 				</div>
 
-				<div class="question unanswered {{$index === activeQuestion ? 'active' : 'inactive'}}" ng-repeat="myQuestion in myQuestions">
+				<div class="question
+				 {{$index === activeQuestion ? 'active' : 'inactive'}}
+				 {{myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}"
+				 ng-repeat="myQuestion in myQuestions">
 					<p class="txt">{{myQuestion.question}}</p>
-					<p class="ans" ng-repeat="Answer in myQuestions[$index].answers">{{Answer.text}}</p>
+					<p class="ans"
+						ng-class="{
+							selected:isSelected($parent.$index, $index),
+							correct:isCorrect($parent.$index, $index)
+						}"
+						ng-click="selectAnswer($parent.$index, $index)"
+						ng-repeat="Answer in myQuestions[$index].answers">
+						{{Answer.text}}
+					</p>
 					<div class="feedback">
 						<img src="resources\speech.png" alt="Mr. Quiz" height="60%" width="40%">
-						<p>Good Job! That's <strong>correct</strong></p>
-						<p>Sorry, that's wrong.<strong>You Lose!</strong></p>
-						<div class="btn">Continue</div>
+						<p ng-show="myQuestion.correctness === 'correct'">Good Job! That's <strong>correct</strong></p>
+						<p ng-show="myQuestion.correctness === 'incorrect'">Sorry, that's wrong. <strong>You Lose!</strong></p>
+						<div class="btn" ng-click="selectContinue()">Continue</div>
 					</div>
 				</div>
 			</div>
