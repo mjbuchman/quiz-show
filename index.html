@@ -23,16 +23,16 @@
 				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="40%" width="20%">
 				<hr></hr>
 				<div class="scoreboard {{(activeQuestion > -1) ? 'active' : 'inactive'}}">
-					<p class="level">Level 10</p>
-					<p class="level">Level 9</p>
-					<p class="level">Level 8</p>
-					<p class="level">Level 7</p>
-					<p class="level">Level 6</p>
-					<p class="level">Level 5</p>
-					<p class="level">Level 4</p>
-					<p class="level">Level 3</p>
-					<p class="level">Level 2</p>
-					<p class="level">Level 1</p>
+					<p class="level {{(activeQuestion > 9) ? 'complete' : ''}}">Level 10</p>
+					<p class="level {{(activeQuestion > 8) ? 'complete' : ''}}">Level 9</p>
+					<p class="level {{(activeQuestion > 7) ? 'complete' : ''}}">Level 8</p>
+					<p class="level {{(activeQuestion > 6) ? 'complete' : ''}}">Level 7</p>
+					<p class="level {{(activeQuestion > 5) ? 'complete' : ''}}">Level 6</p>
+					<p class="level {{(activeQuestion > 4) ? 'complete' : ''}}">Level 5</p>
+					<p class="level {{(activeQuestion > 3) ? 'complete' : ''}}">Level 4</p>
+					<p class="level {{(activeQuestion > 2) ? 'complete' : ''}}">Level 3</p>
+					<p class="level {{(activeQuestion > 1) ? 'complete' : ''}}">Level 2</p>
+					<p class="level {{(activeQuestion > 0) ? 'complete' : ''}}">Level 1</p>
 				</div>
 
 				<div class="question
