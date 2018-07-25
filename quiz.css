@@ -272,6 +272,38 @@ body{
     border-radius: 6px;
 }
 
+.lose-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    visibility: hidden;
+}
+
+.lose-screen p{
+    position: relative;
+    top: 20%;
+    left: -11%;
+}
+
+.lose-screen img{
+    position: relative;
+    top: 15%;
+    left: 14%;
+}
+
+.lose-screen .btn{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #FF5952;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+    padding: 7px 20px;
+    border-radius: 6px;
+}
+
 /*--------------------------------------------------------------
 Game Animations
 --------------------------------------------------------------*/
@@ -303,15 +335,18 @@ Game Animations
     left: 9%;
 }
 
-
 .quiz-container .scoreboard.active{
     left: 72%;
 }
 
-
 .quiz-container .game-screen.active > h1{
     transition: 1.5s ease-in-out;
     left: 10%;
+}
+
+.quiz-container .game-screen.done > h1{
+    transition: 1.5s ease-in-out;
+    left: -90%;
 }
 
 .quiz-container .game-screen.active > img{
@@ -319,8 +354,16 @@ Game Animations
     top: 75%;
 }
 
+.quiz-container .game-screen.done > img{
+    top: 75%;
+}
+
 .quiz-container .game-screen.active > hr{
     transition: 1.5s ease-in-out;
+    top: 14%;
+}
+
+.quiz-container .game-screen.done > hr{
     top: 14%;
 }
 
@@ -330,5 +373,14 @@ Game Animations
 }
 
 .win-screen.inactive{
+    transform: scale(0);
+}
+
+.lose-screen.active{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.lose-screen.inactive{
     transform: scale(0);
 }
