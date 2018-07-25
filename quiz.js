@@ -3,17 +3,27 @@
 
     app.controller('QuizController',['$scope','$http','$sce',function($scope,$http,$sce){
 
-        $scope.level = 0;
         $scope.activeQuestion = -1;
         $scope.activeQuestionAnswered = 0;
+        $scope.lives = 1;
 
         $http.get('quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
             $scope.totalQuestions = $scope.myQuestions.length;
         });
 
+        $scope.gameScreenState = function(){
+            if($scope.activeQuestion < 0){
+                return 'inactive';
+            }else if($scope.activeQuestion === 10){
+                return 'done';
+            }else{
+                return 'active';
+            }
+        }
+
         $scope.selectAnswer = function(qIndex, aIndex){
-            var questionState = $scope.myQuestions[qIndex.questionState]
+            var questionState = $scope.myQuestions[qIndex].questionState;
 
             if( questionState != 'answered' ){
                 $scope.myQuestions[qIndex].selectedAnswer = aIndex;
@@ -22,9 +32,9 @@
 
                 if( aIndex === correctAnswer ){
                     $scope.myQuestions[qIndex].correctness = 'correct';
-                    $scope.level += 1;
                 }else{
                     $scope.myQuestions[qIndex].correctness = 'incorrect';
+                    $scope.lives--;
                 }
                 $scope.myQuestions[qIndex].questionState = 'answered';
             }
@@ -39,7 +49,15 @@
         }
 
         $scope.selectContinue = function(){
-            return $scope.activeQuestion += 1;
+            return $scope.activeQuestion++;
+        }
+
+        $scope.gameOverStatus = function(qIndex){
+            if($scope.lives > 0){
+                return 'inactive';
+            }else{
+                return 'active';
+            }
         }
 
     }]);
