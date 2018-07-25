@@ -18,7 +18,7 @@
 				<p class="btn" ng-click="activeQuestion = 0">Play</p>
 			</div> <!-- .intro-->
 
-			<div class="game-screen {{((activeQuestion > -1)) ? 'active' : 'inactive'}}">
+			<div class="game-screen {{gameScreenState()}}">
 				<h1>Are You Smarter Than<span>Mr. Quiz?</span></h1>
 				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="40%" width="20%">
 				<hr></hr>
@@ -64,6 +64,11 @@
 				<img src="resources\winner.png" alt="You Win!" height="50%" width="40%">
 				<p class="btn" ng-click="activeQuestion = 0">Play Again?</p>
 			</div> <!-- .win-screen-->
+
+			<div class="lose-screen {{gameOverStatus($parent.$index)}}">
+				<img src="resources\loser.png" alt="Game Over" height="50%" width="40%">
+				<p class="btn" ng-click="activeQuestion = 0">Try Again?</p>
+			</div> <!-- .lose-screen-->
 
 		</div> <!-- .quiz-container-->
 
