@@ -240,8 +240,41 @@ body{
     opacity: 1;
 }
 
+.win-screen{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    visibility: hidden;
+}
 
-/* Game Animations */
+.win-screen p{
+    position: relative;
+    top: 20%;
+    left: -11%;
+}
+
+.win-screen img{
+    position: relative;
+    top: 15%;
+    left: 14%;
+}
+
+.win-screen .btn{
+    display: inline-block;
+    cursor: pointer;
+    background-color: #FF5952;
+    color: #FFF;
+    text-decoration: none;
+    outline: none;
+    padding: 7px 20px;
+    border-radius: 6px;
+}
+
+/*--------------------------------------------------------------
+Game Animations
+--------------------------------------------------------------*/
 .quiz-container .active, .quiz-container .inactive{
     transition: 1.5s ease-in-out;
 }
@@ -262,6 +295,15 @@ body{
     left: 10%;
 }
 
+.quiz-container .question.answered.active .feedback{
+    left: 9%;
+}
+
+.quiz-container .question.unanswered.active .feedback{
+    left: 9%;
+}
+
+
 .quiz-container .scoreboard.active{
     left: 72%;
 }
@@ -280,4 +322,13 @@ body{
 .quiz-container .game-screen.active > hr{
     transition: 1.5s ease-in-out;
     top: 14%;
+}
+
+.win-screen.active{
+    transform: scale(1);
+    visibility: visible;
+}
+
+.win-screen.inactive{
+    transform: scale(0);
 }
