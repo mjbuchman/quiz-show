@@ -16,9 +16,9 @@
 			<div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
 				<img src="resources\title.png" alt="Title" height="50%" width="50%">
 				<p class="btn" ng-click="activeQuestion = 0">Play</p>
-			</div>
+			</div> <!-- .intro-->
 
-			<div class="game-screen {{(activeQuestion > -1) ? 'active' : 'inactive'}}">
+			<div class="game-screen {{((activeQuestion > -1)) ? 'active' : 'inactive'}}">
 				<h1>Are You Smarter Than<span>Mr. Quiz?</span></h1>
 				<img src="resources\mr.quiz.png" alt="Mr. Quiz" height="40%" width="20%">
 				<hr></hr>
@@ -33,12 +33,13 @@
 					<p class="level {{(activeQuestion > 2) ? 'complete' : ''}}">Level 3</p>
 					<p class="level {{(activeQuestion > 1) ? 'complete' : ''}}">Level 2</p>
 					<p class="level {{(activeQuestion > 0) ? 'complete' : ''}}">Level 1</p>
-				</div>
+				</div> <!-- .scoreboard-->
 
 				<div class="question
 				 {{$index === activeQuestion ? 'active' : 'inactive'}}
 				 {{myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}"
 				 ng-repeat="myQuestion in myQuestions">
+
 					<p class="txt">{{myQuestion.question}}</p>
 					<p class="ans"
 						ng-class="{
@@ -48,17 +49,23 @@
 						ng-click="selectAnswer($parent.$index, $index)"
 						ng-repeat="Answer in myQuestions[$index].answers">
 						{{Answer.text}}
-					</p>
+					</p> <!-- .ans-->
+
 					<div class="feedback">
 						<img src="resources\speech.png" alt="Mr. Quiz" height="60%" width="40%">
 						<p ng-show="myQuestion.correctness === 'correct'">Good Job! That's <strong>correct</strong></p>
 						<p ng-show="myQuestion.correctness === 'incorrect'">Sorry, that's wrong. <strong>You Lose!</strong></p>
 						<div class="btn" ng-click="selectContinue()">Continue</div>
-					</div>
-				</div>
-			</div>
+					</div> <!-- .feedback-->
+				</div> <!-- .question-->
+			</div> <!-- .game-screen-->
 
-		</div>
+			<div class="win-screen {{(activeQuestion < 10) ? 'inactive' : 'active'}}">
+				<img src="resources\winner.png" alt="You Win!" height="50%" width="40%">
+				<p class="btn" ng-click="activeQuestion = 0">Play Again?</p>
+			</div> <!-- .win-screen-->
+
+		</div> <!-- .quiz-container-->
 
 	</body>
 </html>
