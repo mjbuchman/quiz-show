@@ -6,6 +6,7 @@
         $scope.activeQuestion = -1;
         $scope.activeQuestionAnswered = 0;
         $scope.lives = 1;
+        $scope.level = 0;
 
         $http.get('quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
@@ -17,6 +18,8 @@
                 return 'inactive';
             }else if($scope.activeQuestion === 10){
                 return 'done';
+            }else if($scope.activeQuestion > 10){
+                return 'gameover';
             }else{
                 return 'active';
             }
@@ -32,6 +35,7 @@
 
                 if( aIndex === correctAnswer ){
                     $scope.myQuestions[qIndex].correctness = 'correct';
+                    $scope.level++;
                 }else{
                     $scope.myQuestions[qIndex].correctness = 'incorrect';
                     $scope.lives--;
@@ -56,6 +60,7 @@
             if($scope.lives > 0){
                 return 'inactive';
             }else{
+                $scope.activeQuestion = 11;
                 return 'active';
             }
         }
