@@ -60,13 +60,13 @@ body{
 .intro p{
     position: relative;
     top: 20%;
-    left: -3%;
+    left: -13.5%;
 }
 
 .intro img{
     position: relative;
     top: 15%;
-    left: 22.5%;
+    left: 17%;
 }
 
 .intro .btn{
@@ -349,6 +349,11 @@ Game Animations
     left: -90%;
 }
 
+.quiz-container .game-screen.gameover > h1{
+    transition: 1.5s ease-in-out;
+    left: -90%;
+}
+
 .quiz-container .game-screen.active > img{
     transition: 1.5s ease-in-out;
     top: 75%;
@@ -358,12 +363,20 @@ Game Animations
     top: 75%;
 }
 
+.quiz-container .game-screen.gameover > img{
+    top: 75%;
+}
+
 .quiz-container .game-screen.active > hr{
     transition: 1.5s ease-in-out;
     top: 14%;
 }
 
 .quiz-container .game-screen.done > hr{
+    top: 14%;
+}
+
+.quiz-container .game-screen.gameover > hr{
     top: 14%;
 }
 
