@@ -10,93 +10,93 @@
         "correct"  : 1
     },
     {
-        "question" : "Saturn is test1 ________ planet from the Sun.",
+        "question" : "Which of the following items was owned by the fewest U.S. homes in 1990?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "Home Computer" },
+            { "id" : 1, "text" : "Cordless Phone" },
+            { "id" : 2, "text" : "CD Player" },
+            { "id" : 3, "text" : "Dishwasher" }
+        ],
+        "correct"  : 2
+    },
+    {
+        "question" : "The first black American pictured on a U.S. postage stamp was who?",
+        "answers"   : [
+            { "id" : 0, "text" : "Joe Louis" },
+            { "id" : 1, "text" : "Booker T. Washington" },
+            { "id" : 2, "text" : "Louis Armstrong" },
+            { "id" : 3, "text" : "Frederick Douglass" }
+        ],
+        "correct"  : 0
+    },
+    {
+        "question" : "Which of these characters turned 40 years old in 1990?",
+        "answers"   : [
+            { "id" : 0, "text" : "Bugs Bunny" },
+            { "id" : 1, "text" : "Charlie Brown" },
+            { "id" : 2, "text" : "Mickey Mouse" },
+            { "id" : 3, "text" : "Fred Flintstone" }
         ],
         "correct"  : 1
     },
     {
-        "question" : "Saturn is test2 ________ planet from the Sun.",
+        "question" : "Which of the following hands ranks highest in Texas Hold'em Poker?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "Full House" },
+            { "id" : 1, "text" : "Flush" },
+            { "id" : 2, "text" : "Straight" },
+            { "id" : 3, "text" : "Three of a Kind" }
+        ],
+        "correct"  : 0
+    },
+    {
+        "question" : "In what year did Topps start producing baseball cards?",
+        "answers"   : [
+            { "id" : 0, "text" : "1945" },
+            { "id" : 1, "text" : "1951" },
+            { "id" : 2, "text" : "1954" },
+            { "id" : 3, "text" : "1962" }
         ],
         "correct"  : 1
     },
     {
-        "question" : "Saturn is test3 ________ planet from the Sun.",
+        "question" : "What was the name of the island King Kong was discovered on, in the original 1933 movie?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "Ape Island" },
+            { "id" : 1, "text" : "Kong Island" },
+            { "id" : 2, "text" : "Skull Island" },
+            { "id" : 3, "text" : "Monster Island" }
         ],
-        "correct"  : 1
+        "correct"  : 2
     },
     {
-        "question" : "Saturn is test4 ________ planet from the Sun.",
+        "question" : "The Philadelphia mint started putting a 'P' mint mark on quarters in what year?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "1965" },
+            { "id" : 1, "text" : "1970" },
+            { "id" : 2, "text" : "1976" },
+            { "id" : 3, "text" : "1980" }
         ],
-        "correct"  : 1
+        "correct"  : 3
     },
     {
-        "question" : "Saturn is test5 ________ planet from the Sun.",
+        "question" : "Which of the following countries does not border Israel?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "Saudi Arabia" },
+            { "id" : 1, "text" : "Jordan" },
+            { "id" : 2, "text" : "Egypt" },
+            { "id" : 3, "text" : "Syria" }
         ],
-        "correct"  : 1
+        "correct"  : 0
     },
     {
-        "question" : "Saturn is test6 ________ planet from the Sun.",
+        "question" : "Which of these nations has never finished third (overall) in a FIFA World Cup?",
         "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
+            { "id" : 0, "text" : "Chile" },
+            { "id" : 1, "text" : "United States" },
+            { "id" : 2, "text" : "Poland" },
+            { "id" : 3, "text" : "Uruguay" }
         ],
-        "correct"  : 1
-    },
-    {
-        "question" : "Saturn is test7 ________ planet from the Sun.",
-        "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
-        ],
-        "correct"  : 1
-    },
-    {
-        "question" : "Saturn is test8 ________ planet from the Sun.",
-        "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
-        ],
-        "correct"  : 1
-    },
-    {
-        "question" : "Saturn is test9 ________ planet from the Sun.",
-        "answers"   : [
-            { "id" : 0, "text" : "Fourth" },
-            { "id" : 1, "text" : "Sixth" },
-            { "id" : 2, "text" : "Second" },
-            { "id" : 3, "text" : "Eighth" }
-        ],
-        "correct"  : 1
+        "correct"  : 3
     }
 ]
