@@ -35,7 +35,6 @@
 
                 if( aIndex === correctAnswer ){
                     $scope.myQuestions[qIndex].correctness = 'correct';
-                    $scope.level++;
                 }else{
                     $scope.myQuestions[qIndex].correctness = 'incorrect';
                     $scope.lives--;
@@ -53,6 +52,7 @@
         }
 
         $scope.selectContinue = function(){
+            $scope.level++;
             return $scope.activeQuestion++;
         }
 
