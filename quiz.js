@@ -7,6 +7,7 @@
         $scope.activeQuestionAnswered = 0;
         $scope.lives = 1;
         $scope.level = 0;
+        $scope.gameover = false;
 
         $http.get('quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
@@ -53,11 +54,17 @@
 
         $scope.selectContinue = function(){
             $scope.level++;
+
+            if($scope.lives === 0){
+                $scope.gameover = true;
+                $scope.level--;
+            }
+
             return $scope.activeQuestion++;
         }
 
         $scope.gameOverStatus = function(qIndex){
-            if($scope.lives > 0){
+            if($scope.gameover === false){
                 return 'inactive';
             }else{
                 $scope.activeQuestion = 11;
