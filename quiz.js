@@ -8,6 +8,7 @@
         $scope.lives = 1;
         $scope.level = 0;
         $scope.gameover = false;
+        $scope.clicked = false;
 
         $http.get('quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
@@ -42,6 +43,8 @@
                 }
                 $scope.myQuestions[qIndex].questionState = 'answered';
             }
+
+            $scope.clicked = false;
         }
 
         $scope.isSelected = function(qIndex, aIndex){
@@ -53,14 +56,18 @@
         }
 
         $scope.selectContinue = function(){
-            $scope.level++;
+            if($scope.clicked === false){
+                $scope.level++;
 
-            if($scope.lives === 0){
-                $scope.gameover = true;
-                $scope.level--;
+                if($scope.lives === 0){
+                    $scope.gameover = true;
+                    $scope.level--;
+                }
+                $scope.clicked = true;
+
+                return $scope.activeQuestion++;
             }
-
-            return $scope.activeQuestion++;
+            return;
         }
 
         $scope.gameOverStatus = function(qIndex){
@@ -70,6 +77,10 @@
                 $scope.activeQuestion = 11;
                 return 'active';
             }
+        }
+
+        $scope.reset = function(){
+            document.location.reload();
         }
 
     }]);
