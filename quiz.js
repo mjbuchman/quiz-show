@@ -52,7 +52,6 @@
                 }
                 $scope.myQuestions[qIndex].questionState = 'answered';
             }
-
             $scope.clicked = false;
         }
 
