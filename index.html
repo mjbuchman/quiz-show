@@ -60,14 +60,14 @@
 				</div> <!-- .question-->
 			</div> <!-- .game-screen-->
 
-			<div class="win-screen {{(activeQuestion < 10) ? 'inactive' : 'active'}}">
+			<div class="win-screen {{(level < 10) ? 'inactive' : 'active'}}">
 				<img src="resources\winner.png" alt="You Win!" height="50%" width="40%">
-				<p class="btn" ng-click="activeQuestion = 0">Play Again?</p>
+				<p class="btn" ng-click="activeQuestion = 0">Play Again</p>
 			</div> <!-- .win-screen-->
 
 			<div class="lose-screen {{gameOverStatus($parent.$index)}}">
 				<img src="resources\loser.png" alt="Game Over" height="50%" width="40%">
-				<p class="btn" ng-click="activeQuestion = 0">Try Again?</p>
+				<p class="btn" ng-click="activeQuestion = 0">Try Again</p>
 			</div> <!-- .lose-screen-->
 
 		</div> <!-- .quiz-container-->
