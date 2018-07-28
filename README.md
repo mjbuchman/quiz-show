@@ -1,6 +1,7 @@
 # Quiz Show
 
 ## Description
+A Quiz Show Web App built using the Angular.js framework.
 
 ## How to Use
 Clone the [repository](https://github.com/mjbuchman/quiz-show) and run the index.html file.
