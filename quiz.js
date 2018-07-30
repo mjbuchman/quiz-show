@@ -10,10 +10,13 @@
         $scope.gameover = false;
         $scope.clicked = false;
         $scope.quoteText = "Good Luck! Try not to lose!";
+        $scope.currentQuestion = -1;
+        $scope.questionArray = [];
 
         $http.get('quiz_data.json').then(function(quizData){
             $scope.myQuestions = quizData.data;
             $scope.totalQuestions = $scope.myQuestions.length;
+            console.log($scope.totalQuestions);
         });
 
         $http.get('quotes.json').then(function(quoteData){
@@ -34,15 +37,37 @@
             }
         }
 
+        $scope.selectQuestion = function(){
+            if($scope.activeQuestion < 9 && $scope.gameover != true){
+                var flag = false;
+                var count = 0;
+                while(flag === false){
+                    $scope.currentQuestion = Math.floor(Math.random() * ($scope.totalQuestions));
+                    for(i = 0; i < $scope.questionArray.length; i++){
+                        if($scope.currentQuestion === $scope.questionArray[i]){
+                            count++;
+                        }
+                    }
+                    if(count === 0){
+                        flag = true;
+                    }
+                    count = 0;
+                }
+                $scope.questionArray.push($scope.currentQuestion);
+            }else{
+                $scope.currentQuestion = -1;
+            }
+        }
+
         $scope.selectAnswer = function(qIndex, aIndex){
             var questionState = $scope.myQuestions[qIndex].questionState;
 
-            if( questionState != 'answered' ){
+            if(questionState != 'answered'){
                 $scope.myQuestions[qIndex].selectedAnswer = aIndex;
                 var correctAnswer = $scope.myQuestions[qIndex].correct;
                 $scope.myQuestions[qIndex].correctAnswer = correctAnswer;
 
-                if( aIndex === correctAnswer ){
+                if(aIndex === correctAnswer){
                     $scope.myQuestions[qIndex].correctness = 'correct';
                     $scope.quoteText = $scope.myQuotes[0].quote;
                 }else{
@@ -79,6 +104,7 @@
                 }
                 $scope.clicked = true;
                 $scope.fillText();
+                $scope.selectQuestion();
 
                 return $scope.activeQuestion++;
             }
