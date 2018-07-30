@@ -15,7 +15,7 @@
 		<div class="quiz-container" ng-controller='QuizController'>
 			<div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
 				<img src="resources\title.png" alt="Title" height="50%" width="60%">
-				<p class="btn" ng-click="activeQuestion = 0">Play</p>
+				<p class="btn" ng-click="activeQuestion = 0; selectQuestion()">Play</p>
 			</div> <!-- .intro-->
 
 			<div class="game-screen {{gameScreenState()}}">
@@ -38,7 +38,7 @@
 				</div> <!-- .scoreboard-->
 
 				<div class="question
-				 {{$index === activeQuestion ? 'active' : 'inactive'}}
+				 {{$index === currentQuestion ? 'active' : 'inactive'}}
 				 {{myQuestion.questionState === 'answered' ? 'answered' : 'unanswered'}}"
 				 ng-repeat="myQuestion in myQuestions">
 					<p class="txt">{{myQuestion.question}}</p>
