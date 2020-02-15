@@ -3,7 +3,7 @@
         "question" : "Saturn is the ________ planet from the Sun.",
         "answers"   : [
             { "id" : 0, "text" : "Fifth" },
-            { "id" : 1, "text" : "Sixth" },
+            { "id" : 1, "text" : "Sixth*" },
             { "id" : 2, "text" : "Seventh" },
             { "id" : 3, "text" : "Eighth" }
         ],
@@ -14,7 +14,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Home Computer" },
             { "id" : 1, "text" : "Cordless Phone" },
-            { "id" : 2, "text" : "CD Player" },
+            { "id" : 2, "text" : "CD Player*" },
             { "id" : 3, "text" : "Dishwasher" }
         ],
         "correct"  : 2
@@ -22,7 +22,7 @@
     {
         "question" : "The first black American pictured on a U.S. postage stamp was who?",
         "answers"   : [
-            { "id" : 0, "text" : "Joe Louis" },
+            { "id" : 0, "text" : "Joe Louis*" },
             { "id" : 1, "text" : "Booker T. Washington" },
             { "id" : 2, "text" : "Louis Armstrong" },
             { "id" : 3, "text" : "Frederick Douglass" }
@@ -33,7 +33,7 @@
         "question" : "Which of these characters turned 60 years old in 2010?",
         "answers"   : [
             { "id" : 0, "text" : "Bugs Bunny" },
-            { "id" : 1, "text" : "Charlie Brown" },
+            { "id" : 1, "text" : "Charlie Brown*" },
             { "id" : 2, "text" : "Mickey Mouse" },
             { "id" : 3, "text" : "Fred Flintstone" }
         ],
@@ -42,7 +42,7 @@
     {
         "question" : "Which of the following hands ranks highest in Texas Hold'em Poker?",
         "answers"   : [
-            { "id" : 0, "text" : "Full House" },
+            { "id" : 0, "text" : "Full House*" },
             { "id" : 1, "text" : "Flush" },
             { "id" : 2, "text" : "Straight" },
             { "id" : 3, "text" : "Three of a Kind" }
@@ -53,7 +53,7 @@
         "question" : "In what year did Topps start producing baseball cards?",
         "answers"   : [
             { "id" : 0, "text" : "1945" },
-            { "id" : 1, "text" : "1951" },
+            { "id" : 1, "text" : "1951*" },
             { "id" : 2, "text" : "1954" },
             { "id" : 3, "text" : "1962" }
         ],
@@ -64,7 +64,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Ape Island" },
             { "id" : 1, "text" : "Kong Island" },
-            { "id" : 2, "text" : "Skull Island" },
+            { "id" : 2, "text" : "Skull Island*" },
             { "id" : 3, "text" : "Monster Island" }
         ],
         "correct"  : 2
@@ -75,14 +75,14 @@
             { "id" : 0, "text" : "1965" },
             { "id" : 1, "text" : "1970" },
             { "id" : 2, "text" : "1976" },
-            { "id" : 3, "text" : "1980" }
+            { "id" : 3, "text" : "1980*" }
         ],
         "correct"  : 3
     },
     {
         "question" : "Which of the following countries does not border Israel?",
         "answers"   : [
-            { "id" : 0, "text" : "Saudi Arabia" },
+            { "id" : 0, "text" : "Saudi Arabia*" },
             { "id" : 1, "text" : "Jordan" },
             { "id" : 2, "text" : "Egypt" },
             { "id" : 3, "text" : "Syria" }
@@ -95,14 +95,14 @@
             { "id" : 0, "text" : "Chile" },
             { "id" : 1, "text" : "United States" },
             { "id" : 2, "text" : "Poland" },
-            { "id" : 3, "text" : "Uruguay" }
+            { "id" : 3, "text" : "Uruguay*" }
         ],
         "correct"  : 3
     },
     {
         "question" : "Which one of the following countries is not known as one of the Baltic states?",
         "answers"   : [
-            { "id" : 0, "text" : "Albania" },
+            { "id" : 0, "text" : "Albania*" },
             { "id" : 1, "text" : "Estonia" },
             { "id" : 2, "text" : "Latvia" },
             { "id" : 3, "text" : "Lithuania" }
@@ -115,15 +115,15 @@
             { "id" : 0, "text" : "Charles I" },
             { "id" : 1, "text" : "Elizabeth I" },
             { "id" : 2, "text" : "Henry VIII" },
-            { "id" : 3, "text" : "James I" }
+            { "id" : 3, "text" : "James I*" }
         ],
-        "correct"  : 4
+        "correct"  : 3
     },
     {
         "question" : "Austria and which other country are connected by the Brenner Pass?",
         "answers"   : [
             { "id" : 0, "text" : "Hungary" },
-            { "id" : 1, "text" : "Italy" },
+            { "id" : 1, "text" : "Italy*" },
             { "id" : 2, "text" : "Switzerland" },
             { "id" : 3, "text" : "Germany" }
         ],
@@ -133,7 +133,7 @@
         "question" : "How many total languages and dialects are spoken all over the world?",
         "answers"   : [
             { "id" : 0, "text" : "6,000" },
-            { "id" : 1, "text" : "9,000" },
+            { "id" : 1, "text" : "9,000*" },
             { "id" : 2, "text" : "4,000" },
             { "id" : 3, "text" : "1,000" }
         ],
@@ -144,7 +144,7 @@
         "answers"   : [
             { "id" : 0, "text" : "59" },
             { "id" : 1, "text" : "109" },
-            { "id" : 2, "text" : "159" },
+            { "id" : 2, "text" : "159*" },
             { "id" : 3, "text" : "209" }
         ],
         "correct"  : 2
@@ -155,14 +155,14 @@
             { "id" : 0, "text" : "60 ft" },
             { "id" : 1, "text" : "70 ft" },
             { "id" : 2, "text" : "80 ft" },
-            { "id" : 3, "text" : "90 ft" }
+            { "id" : 3, "text" : "90 ft*" }
         ],
         "correct"  : 3
     },
     {
         "question" : "Which author wrote 'Brave New World'?",
         "answers"   : [
-            { "id" : 0, "text" : "Aldous Huxley" },
+            { "id" : 0, "text" : "Aldous Huxley*" },
             { "id" : 1, "text" : "DH Lawrence" },
             { "id" : 2, "text" : "Graham Greene" },
             { "id" : 3, "text" : "Thomas Hardy" }
@@ -175,7 +175,7 @@
             { "id" : 0, "text" : "Jack Diamond" },
             { "id" : 1, "text" : "Jack Opal" },
             { "id" : 2, "text" : "Jack Jade" },
-            { "id" : 3, "text" : "Jack Ruby" }
+            { "id" : 3, "text" : "Jack Ruby*" }
         ],
         "correct"  : 3
     },
@@ -184,7 +184,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Beethoven" },
             { "id" : 1, "text" : "Handel" },
-            { "id" : 2, "text" : "Tchaikovsky" },
+            { "id" : 2, "text" : "Tchaikovsky*" },
             { "id" : 3, "text" : "Mozart" }
         ],
         "correct"  : 2
@@ -193,7 +193,7 @@
         "question" : "The ulna is a long bone in which part of the body?",
         "answers"   : [
             { "id" : 0, "text" : "Leg" },
-            { "id" : 1, "text" : "Arm" },
+            { "id" : 1, "text" : "Arm*" },
             { "id" : 2, "text" : "Ear" },
             { "id" : 3, "text" : "Neck" }
         ],
@@ -203,7 +203,7 @@
         "question" : "What is the capital of New Zealand?",
         "answers"   : [
             { "id" : 0, "text" : "Auckland" },
-            { "id" : 1, "text" : "Wellington" },
+            { "id" : 1, "text" : "Wellington*" },
             { "id" : 2, "text" : "Tauranga" },
             { "id" : 3, "text" : "Christchurch" }
         ],
@@ -215,7 +215,7 @@
             { "id" : 0, "text" : "85" },
             { "id" : 1, "text" : "86" },
             { "id" : 2, "text" : "87" },
-            { "id" : 3, "text" : "88" }
+            { "id" : 3, "text" : "88*" }
         ],
         "correct"  : 3
     },
@@ -224,7 +224,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Fast Freddie" },
             { "id" : 1, "text" : "Ferocious Feline" },
-            { "id" : 2, "text" : "Fighting Falcon" },
+            { "id" : 2, "text" : "Fighting Falcon*" },
             { "id" : 3, "text" : "Freedom Fighter" }
         ],
         "correct"  : 2
@@ -232,7 +232,7 @@
     {
         "question" : "What is Harry's surname in the 'Dirty Harry' film series?",
         "answers"   : [
-            { "id" : 0, "text" : "Callahan" },
+            { "id" : 0, "text" : "Callahan*" },
             { "id" : 1, "text" : "Carnegie" },
             { "id" : 2, "text" : "Colt" },
             { "id" : 3, "text" : "Crown" }
@@ -243,7 +243,7 @@
         "question" : "Sports car manufacturer Ferrari are based where?",
         "answers"   : [
             { "id" : 0, "text" : "Spain" },
-            { "id" : 1, "text" : "Italy" },
+            { "id" : 1, "text" : "Italy*" },
             { "id" : 2, "text" : "San Marino" },
             { "id" : 3, "text" : "Montenegro" }
         ],
@@ -253,7 +253,7 @@
         "question" : "According to the CIA World Factbook, which country has the longest life expectancy?",
         "answers"   : [
             { "id" : 0, "text" : "Andorra" },
-            { "id" : 1, "text" : "Macau" },
+            { "id" : 1, "text" : "Macau*" },
             { "id" : 2, "text" : "Japan" },
             { "id" : 3, "text" : "Singapore" }
         ],
@@ -262,7 +262,7 @@
     {
         "question" : "What is the penultimate (second to last) book of the bible?",
         "answers"   : [
-            { "id" : 0, "text" : "Jude" },
+            { "id" : 0, "text" : "Jude*" },
             { "id" : 1, "text" : "Hebrews" },
             { "id" : 2, "text" : "James" },
             { "id" : 3, "text" : "Philemon" }
@@ -275,7 +275,7 @@
             { "id" : 0, "text" : "Bangkok" },
             { "id" : 1, "text" : "Hanoi" },
             { "id" : 2, "text" : "Kuala Lumpur" },
-            { "id" : 3, "text" : "Manila" }
+            { "id" : 3, "text" : "Manila*" }
         ],
         "correct"  : 3
     },
@@ -283,7 +283,7 @@
         "question" : "Which country won the 4x100m sprint relay gold medal at the Sydney Olympics?",
         "answers"   : [
             { "id" : 0, "text" : "Cuba" },
-            { "id" : 1, "text" : "USA" },
+            { "id" : 1, "text" : "USA*" },
             { "id" : 2, "text" : "Jamaica" },
             { "id" : 3, "text" : "Great Britain" }
         ],
@@ -293,7 +293,7 @@
         "question" : "Which of the following is not included in a decathlon",
         "answers"   : [
             { "id" : 0, "text" : "Javelin" },
-            { "id" : 1, "text" : "200m" },
+            { "id" : 1, "text" : "200m*" },
             { "id" : 2, "text" : "Pole Vault" },
             { "id" : 3, "text" : "1500m" }
         ],
@@ -305,7 +305,7 @@
             { "id" : 0, "text" : "Adam Goldberg" },
             { "id" : 1, "text" : "Barry Pepper" },
             { "id" : 2, "text" : "Edward Burns" },
-            { "id" : 3, "text" : "Matt Damon" }
+            { "id" : 3, "text" : "Matt Damon*" }
         ],
         "correct"  : 3
     },
@@ -314,7 +314,7 @@
         "answers"   : [
             { "id" : 0, "text" : "The Lord of the Rings" },
             { "id" : 1, "text" : "The Man in the Iron Mask" },
-            { "id" : 2, "text" : "The Hobbit" },
+            { "id" : 2, "text" : "The Hobbit*" },
             { "id" : 3, "text" : "The Prisoner of Zenda" }
         ],
         "correct"  : 2
@@ -323,7 +323,7 @@
         "question" : "The 1982 film Blade Runner is set in which city?",
         "answers"   : [
             { "id" : 0, "text" : "Chicago" },
-            { "id" : 1, "text" : "New York" },
+            { "id" : 1, "text" : "New York*" },
             { "id" : 2, "text" : "Seattle" },
             { "id" : 3, "text" : "Los Angeles" }
         ],
@@ -333,7 +333,7 @@
         "question" : "What is the surname of Sigourney Weaver's character in the Alien films?",
         "answers"   : [
             { "id" : 0, "text" : "Radley" },
-            { "id" : 1, "text" : "Ripley" },
+            { "id" : 1, "text" : "Ripley*" },
             { "id" : 2, "text" : "Ridley" },
             { "id" : 3, "text" : "Rodney" }
         ],
@@ -343,7 +343,7 @@
         "question" : "In which year did the film 'Star Wars' get released?",
         "answers"   : [
             { "id" : 0, "text" : "1976" },
-            { "id" : 1, "text" : "1977" },
+            { "id" : 1, "text" : "1977*" },
             { "id" : 2, "text" : "1978" },
             { "id" : 3, "text" : "1979" }
         ],
@@ -355,14 +355,14 @@
             { "id" : 0, "text" : "Lower Troposphere" },
             { "id" : 1, "text" : "Stratosphere" },
             { "id" : 2, "text" : "Exosphere" },
-            { "id" : 3, "text" : "Higher Troposphere" }
+            { "id" : 3, "text" : "Higher Troposphere*" }
         ],
         "correct"  : 3
     },
     {
         "question" : "Into which sea does Europe's longest river flow?",
         "answers"   : [
-            { "id" : 0, "text" : "Caspian" },
+            { "id" : 0, "text" : "Caspian*" },
             { "id" : 1, "text" : "Baltic" },
             { "id" : 2, "text" : "Mediterranean" },
             { "id" : 3, "text" : "North" }
@@ -372,7 +372,7 @@
     {
         "question" : "Between 1949 and 1990, what was the capital of West Germany?",
         "answers"   : [
-            { "id" : 0, "text" : "Bonn" },
+            { "id" : 0, "text" : "Bonn*" },
             { "id" : 1, "text" : "Cologne" },
             { "id" : 2, "text" : "Frankfurt" },
             { "id" : 3, "text" : "Munich" }
@@ -385,7 +385,7 @@
             { "id" : 0, "text" : "White and Red" },
             { "id" : 1, "text" : "Blue and Yellow" },
             { "id" : 2, "text" : "Green and Yellow" },
-            { "id" : 3, "text" : "Red and Green" }
+            { "id" : 3, "text" : "Red and Green*" }
         ],
         "correct"  : 3
     },
@@ -394,7 +394,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Uzbekistan" },
             { "id" : 1, "text" : "Turkmenistan" },
-            { "id" : 2, "text" : "Kazakhstan" },
+            { "id" : 2, "text" : "Kazakhstan*" },
             { "id" : 3, "text" : "Tajikistan" }
         ],
         "correct"  : 2
@@ -404,7 +404,7 @@
         "answers"   : [
             { "id" : 0, "text" : "LA Dodgers" },
             { "id" : 1, "text" : "St. Louis Cardinals" },
-            { "id" : 2, "text" : "Chicago White Sox" },
+            { "id" : 2, "text" : "Chicago White Sox*" },
             { "id" : 3, "text" : "Cincinnati Reds" }
         ],
         "correct"  : 2
@@ -412,7 +412,7 @@
     {
         "question" : "Who scored Real Madrid's winner in the 2002 Champions' League Final?",
         "answers"   : [
-            { "id" : 0, "text" : "Zinedine Zidane" },
+            { "id" : 0, "text" : "Zinedine Zidane*" },
             { "id" : 1, "text" : "David Beckham" },
             { "id" : 2, "text" : "Luis Figo" },
             { "id" : 3, "text" : "Fernadno Morientes" }
@@ -425,7 +425,7 @@
             { "id" : 0, "text" : "Baltimore Colts" },
             { "id" : 1, "text" : "New York Jets" },
             { "id" : 2, "text" : "San Francisco 49ers" },
-            { "id" : 3, "text" : "Green Bay Packers" }
+            { "id" : 3, "text" : "Green Bay Packers*" }
         ],
         "correct"  : 3
     },
@@ -434,7 +434,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Uzbekistan" },
             { "id" : 1, "text" : "Turkmenistan" },
-            { "id" : 2, "text" : "Kazakhstan" },
+            { "id" : 2, "text" : "Kazakhstan*" },
             { "id" : 3, "text" : "Tajikistan" }
         ],
         "correct"  : 2
@@ -443,7 +443,7 @@
         "question" : "Which major game in the college football calendar is played at Pasadena?",
         "answers"   : [
             { "id" : 0, "text" : "Sugar Bowl" },
-            { "id" : 1, "text" : "Rose Bowl" },
+            { "id" : 1, "text" : "Rose Bowl*" },
             { "id" : 2, "text" : "Cotton Bowl" },
             { "id" : 3, "text" : "Fiesta Bowl" }
         ],
@@ -452,7 +452,7 @@
     {
         "question" : "Which team won the NBA Championship in 2004-05?",
         "answers"   : [
-            { "id" : 0, "text" : "San Antonio Spurs" },
+            { "id" : 0, "text" : "San Antonio Spurs*" },
             { "id" : 1, "text" : "LA Lakers" },
             { "id" : 2, "text" : "Detroit Pistons" },
             { "id" : 3, "text" : "Boston Celtics" }
@@ -464,7 +464,7 @@
         "answers"   : [
             { "id" : 0, "text" : "Greece" },
             { "id" : 1, "text" : "USA" },
-            { "id" : 2, "text" : "Argentina" },
+            { "id" : 2, "text" : "Argentina*" },
             { "id" : 3, "text" : "Russia" }
         ],
         "correct"  : 2
@@ -473,7 +473,7 @@
         "question" : "The Stanley Cup is the North American Championship trophy in which sport?",
         "answers"   : [
             { "id" : 0, "text" : "Lacrosse" },
-            { "id" : 1, "text" : "Hockey" },
+            { "id" : 1, "text" : "Hockey*" },
             { "id" : 2, "text" : "Volleyball" },
             { "id" : 3, "text" : "Basketball" }
         ],
@@ -484,7 +484,7 @@
         "answers"   : [
             { "id" : 0, "text" : "1696" },
             { "id" : 1, "text" : "1754" },
-            { "id" : 2, "text" : "1896" },
+            { "id" : 2, "text" : "1896*" },
             { "id" : 3, "text" : "1902" }
         ],
         "correct"  : 2
@@ -495,7 +495,7 @@
             { "id" : 0, "text" : "6 yards" },
             { "id" : 1, "text" : "8 yards" },
             { "id" : 2, "text" : "10 yards" },
-            { "id" : 3, "text" : "12 yards" }
+            { "id" : 3, "text" : "12 yards*" }
         ],
         "correct"  : 3
     }

@@ -13,6 +13,8 @@
 
 	<body>
 		<div class="quiz-container" ng-controller='QuizController'>
+			<p class="demo-text">DEMO VERSION - Correct Answers indicated by '*'</p>
+
 			<div class="intro {{(activeQuestion > -1) ? 'inactive' : 'active'}}">
 				<img src="resources\title.png" alt="Title" height="50%" width="60%">
 				<p class="btn" ng-click="activeQuestion = 0; selectQuestion()">Play</p>
