@@ -6,8 +6,6 @@ A Quiz Show Web App built using the Angular.js framework.
 ## How to Use
 Clone the [repository](https://github.com/mjbuchman/quiz-show) and run the index.html file. Otherwise, click [here](http://bigquizshow.atwebpages.com/) to view in browser. 
 
-**Note:** Chrome does not support local access of json files so all features may not appear at the present time. For best results, open index.html in another browser or visit link provided on any browser.
-
 ## Screenshots
 ![Title Screen](https://i.postimg.cc/8cz8SCwd/Quiz_Show_-_Title.jpg)
 ![Question Unanswered](https://i.postimg.cc/zvtsX1Ps/Quiz_Show_-_Question_Unanswered.jpg)
